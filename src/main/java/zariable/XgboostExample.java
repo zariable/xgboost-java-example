@@ -11,6 +11,11 @@ import ml.dmlc.xgboost4j.java.DMatrix;
 import ml.dmlc.xgboost4j.java.XGBoost;
 import ml.dmlc.xgboost4j.java.XGBoostError;
 
+/**
+ * Example:
+ * mvn clean package
+ * java -cp target/xgboost-java-example-1.0-SNAPSHOT-jar-with-dependencies.jar zariable.XgboostExample
+ */
 public class XgboostExample {
     public static boolean checkPredicts(float[][] fPredicts, float[][] sPredicts) {
         if (fPredicts.length != sPredicts.length) {
